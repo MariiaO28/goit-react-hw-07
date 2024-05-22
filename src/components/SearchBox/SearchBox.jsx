@@ -5,7 +5,7 @@ import css from './SearchBox.module.css';
 export default function SearchBox() {
     const dispatch = useDispatch()
 
-    const filter = useSelector(selectNameFilter)
+    const filter = useSelector(selectNameFilter);
     const handleFilter = (event) => dispatch(changeFilter(event.target.value))
 
     return (
